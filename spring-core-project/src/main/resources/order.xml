@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="order" class="com.rays.test.Order">
+	  <property name="product" value="TV"></property>
+	   <property name="price" value="100000"></property>
+	     <property name="quantity" value="1"></property>
+	</bean>
+	
+	<bean id= "order1" class="com.rays.test.Order">
+	    <property name="product" value="Fridge"></property>
+	   <property name="price" value="200000"></property>
+	     <property name="quantity" value="4"></property>
+	    
+	</bean>
+	
+	<bean id="order2" class="com.rays.test.Order">
+		<constructor-arg value="WASHING MACHINE"></constructor-arg>
+		<constructor-arg value="50000"></constructor-arg>
+		<constructor-arg value="1"></constructor-arg>
+	</bean>
+	
+	</beans>

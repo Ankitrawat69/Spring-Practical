@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="person" class="com.rays.test.Person">
+	  <property name="name" value="NarendraModi"></property>
+	   <property name="login" value="narendra@gmail.com"></property>
+	     <property name="password" value="narendra@123"></property>
+	</bean>
+	
+	<bean id= "person1" class="com.rays.test.Person">
+	   <property name="name" value="AmitShah"></property>
+	    <property name="login" value="amit@gmail.com"></property>
+	     <property name="password" value="amit@123"></property>
+	    
+	</bean>
+	
+	<bean id="person2" class="com.rays.test.Person">
+		<constructor-arg value="RahulGandhi"></constructor-arg>
+		<constructor-arg value="RahulGandhi@gmail.com"></constructor-arg>
+		<constructor-arg value="RahulGandhi@123"></constructor-arg>
+	</bean>
+	
+	</beans>

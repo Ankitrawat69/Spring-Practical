@@ -29,5 +29,6 @@ public class TestUser {
 		System.out.println(dto.getName());
 		System.out.println(dto.getAddress());
 	}
+	
 
 }

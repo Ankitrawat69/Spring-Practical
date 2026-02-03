@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="payment" class="com.rays.ioc.Payment">
+		<property name="balance" value="500"></property>
+	</bean>
+
+	<bean id="inventory" class="com.rays.ioc.Inventory">
+		<property name="stock" value="10"></property>
+	</bean>
+
+	<bean id="order" class="com.rays.ioc.Order2">
+		<constructor-arg ref="payment"></constructor-arg>
+		<constructor-arg ref="inventory"></constructor-arg>
+	</bean>
+
+</beans>

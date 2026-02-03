@@ -31,6 +31,7 @@ import org.springframework.core.io.ClassPathResource;
 			System.out.println(dto.getName());
 			System.out.println(dto.getLogin());
 			System.out.println(dto.getPassword());	
-			
+
+
 	}
 }

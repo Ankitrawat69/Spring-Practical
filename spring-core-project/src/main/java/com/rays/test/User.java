@@ -6,6 +6,7 @@ public class User {
 	private String address;
 
 	public User() {
+		
 	}
 
 	public User(String name, String address) {
@@ -27,6 +28,5 @@ public class User {
 
 	public void setAddress(String address) {
 		this.address = address;
-	}
-
+	}	
 }

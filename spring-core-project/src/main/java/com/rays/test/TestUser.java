@@ -30,5 +30,4 @@ public class TestUser {
 		System.out.println(dto.getAddress());
 	}
 	
-
 }

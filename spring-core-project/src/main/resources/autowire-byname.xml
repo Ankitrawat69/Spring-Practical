@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="payment" class="com.rays.autowire.byname.Payment">
+		<property name="balance" value="1000"></property>
+	</bean>
+
+	<bean id="inventory" class="com.rays.autowire.byname.Inventory">
+		<property name="stock" value="20"></property>
+	</bean>
+
+	<bean id="order" class="com.rays.autowire.byname.Order1"
+		autowire="byName">
+	</bean>
+
+</beans>

@@ -14,5 +14,5 @@
 	<bean id="order" class="com.rays.autowire.byname.Order1"
 		autowire="byName">
 	</bean>
-
+	
 </beans>

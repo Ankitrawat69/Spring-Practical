@@ -26,7 +26,6 @@ public class TestUserService {
 
 	public void testAdd() {
 		UserDTO dto = new UserDTO();
-		dto.setId(2);
 		dto.setFirstName("Ankit");
 		dto.setLastName("Rawat");
 		dto.setLogin("ankit@gmail.com");

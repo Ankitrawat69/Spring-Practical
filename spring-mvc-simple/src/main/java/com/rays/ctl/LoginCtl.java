@@ -30,12 +30,11 @@ public class LoginCtl {
 			session.invalidate();
 			model.addAttribute("msg", "user logout successfully");
 		}
-
 		return "LoginView";
 	}
 
 	@PostMapping
-	public String login(@ModelAttribute("form") LoginForm form, HttpSession session) {
+	public String login(@ModelAttribute("form") LoginForm form, HttpSession session, Model model) {
 
 		UserDTO dto = new UserDTO();
 
@@ -45,6 +44,7 @@ public class LoginCtl {
 			session.setAttribute("user", dto);
 			return "redirect:/Welcome";
 		} else {
+			model.addAttribute("emsg", "Please Enter Vaild Login and Password");
 			return "LoginView";
 		}
 

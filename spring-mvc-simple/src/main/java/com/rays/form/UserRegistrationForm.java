@@ -1,15 +1,28 @@
+
 package com.rays.form;
 
-import java.util.Date;
+import org.hibernate.validator.constraints.NotEmpty;
 
 public class UserRegistrationForm {
 
-	protected Long id = null;
+	protected Long id = 0L;
+
+	@NotEmpty(message = "firstName is required")
 	private String firstName = null;
+
+	@NotEmpty(message = "lastName is required")
 	private String lastName = null;
+
+	@NotEmpty(message = "login is required")
 	private String login = null;
+
+	@NotEmpty(message = "password is required")
 	private String password = null;
+
+	@NotEmpty(message = "dob is required")
 	private String dob;
+
+	@NotEmpty(message = "address is required")
 	private String address = null;
 
 	public Long getId() {
@@ -67,5 +80,4 @@ public class UserRegistrationForm {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
 }

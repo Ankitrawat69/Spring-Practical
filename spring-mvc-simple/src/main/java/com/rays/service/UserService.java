@@ -18,6 +18,12 @@ public class UserService implements UserServiceInt {
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public long add(UserDTO dto) {
+		
+		UserDTO existdto = findByLogin(dto.getLogin());
+		if(existdto!= null) {
+			throw new RuntimeException("Login id already exist");
+		}
+		
 		long pk = dao.add(dto);
 		return pk;
 	}

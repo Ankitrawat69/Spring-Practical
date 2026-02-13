@@ -32,7 +32,7 @@ public class UserRegistrationCtl {
 	public String signUp(@ModelAttribute("form") @Valid UserRegistrationForm form, BindingResult bindingResult , Model  model) {
 		
 		if (bindingResult.hasErrors()) {
-			return "UserRegistrationView";
+			return "UserRegistration";
 		}
 		
 		UserDTO dto = new UserDTO();

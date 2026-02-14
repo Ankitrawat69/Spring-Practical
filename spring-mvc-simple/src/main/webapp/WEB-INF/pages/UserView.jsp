@@ -59,7 +59,8 @@
 				</tr>
 				<tr>
 					<th></th>
-					<td><input type="submit" name="operation" value="save"></td>
+					<td><input type="submit" name="operation"
+						value="${form.id > 0 ? 'update' : 'save'}"></td>
 				</tr>
 			</table>
 		</div>

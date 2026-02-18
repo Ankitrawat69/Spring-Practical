@@ -40,4 +40,8 @@
 		<put-attribute name="body"
 			value="/WEB-INF/pages/UserListView.jsp" />
 	</definition>
+	 <definition name="StudentView" extends="base.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/StudentView.jsp" />
+	</definition>
 </tiles-definitions>

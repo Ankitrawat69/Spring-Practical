@@ -18,8 +18,10 @@
 		</h3>
 		<a href="<c:url value="/Welcome"/>"><b>Welcome</b></a> |
 		<a href="<c:url value="/ctl/User"/>"><b>Add User</b></a> | <a
-			href="<c:url value="/ctl/User/search"/>"><b>User List</b></a> | <a
-			href="<c:url value="/Login?operation=logout"/>"><b>Logout</b></a>
+			href="<c:url value="/ctl/User/search"/>"><b>User List</b></a> |
+			<a href="<c:url value="/ctl/Student"/>"><b>Add Student</b></a> |
+			<a href="<c:url value="/ctl/Student/search"/>"><b>Student List</b></a>|
+			<a href="<c:url value="/Login?operation=logout"/>"><b>Logout</b></a>
 	</c:if>
 	<c:if test="${empty sessionScope.user}">
 		<h3>Hi, Guest</h3>

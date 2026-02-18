@@ -16,8 +16,8 @@
 		<sf:form method="post" modelAttribute="form">
 			<table>
 				<tr>
-					<td><sf:input path="firstName"
-							placeholder="search by firstName" /></td>
+					<td><sf:input path="studentName"
+							placeholder="search by studentName" /></td>
 
 					<td><input type="submit" name="operation" value="search"></td>
 				</tr>
@@ -26,28 +26,22 @@
 				<tr>
 					<th>Select</th>
 					<th>Id</th>
-					<th>First Name</th>
-					<th>Last Name</th>
+					<th>Student Name</th>
 					<th>Login</th>
 					<th>Password</th>
-					<th>Dob</th>
 					<th>Address</th>
 					<th>Edit</th>
-					
 				</tr>
 
-				<c:forEach items="${list}" var="user">
+				<c:forEach items="${list}" var="student">
 					<tr align="center">
-						<td align="center"><sf:checkbox path="ids" value="${user.id}" /></td>
-						<td><c:out value="${user.id}"></c:out></td>
-						<td><c:out value="${user.firstName}"></c:out></td>
-						<td><c:out value="${user.lastName}"></c:out></td>
-						<td><c:out value="${user.login}"></c:out></td>
-						<td><c:out value="${user.password}"></c:out></td>
-						<td><fmt:formatDate value="${user.dob}" pattern="dd/MM/yyyy" />
-						</td>
-						<td><c:out value="${user.address}"></c:out></td>
-						<td><a href="<c:url value="/ctl/User?id=${user.id}"/>"><b>Edit</b></a></td>
+						<td align="center"><sf:checkbox path="ids" value="${student.id}" /></td>
+						<td><c:out value="${student.id}"></c:out></td>
+						<td><c:out value="${student.studentName}"></c:out></td>
+						<td><c:out value="${student.login}"></c:out></td>
+						<td><c:out value="${student.password}"></c:out></td>
+						<td><c:out value="${student.address}"></c:out></td>
+						<td><a href="<c:url value="/ctl/Student?id=${student.id}"/>"><b>Edit</b></a></td>
 					</tr>
 				</c:forEach>
 			</table>
